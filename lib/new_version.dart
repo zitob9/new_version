@@ -269,11 +269,13 @@ class NewVersion {
         return WillPopScope(
             child: Platform.isAndroid
                 ? AlertDialog(
+                    backgroundColor: Colors.white,
                     title: dialogTitleWidget,
                     content: dialogTextWidget,
                     actions: actions,
                   )
                 : CupertinoAlertDialog(
+                    backgroundColor: Colors.white,
                     title: dialogTitleWidget,
                     content: dialogTextWidget,
                     actions: actions,
