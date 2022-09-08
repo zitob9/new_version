@@ -275,7 +275,6 @@ class NewVersion {
                     actions: actions,
                   )
                 : CupertinoAlertDialog(
-                    backgroundColor: Colors.white,
                     title: dialogTitleWidget,
                     content: dialogTextWidget,
                     actions: actions,
