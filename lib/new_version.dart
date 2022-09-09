@@ -219,7 +219,10 @@ class NewVersion {
     String dismissButtonText = 'Maybe Later',
     VoidCallback? dismissAction,
   }) async {
-    final dialogTitleWidget = Text(dialogTitle);
+    final dialogTitleWidget = Text(
+      dialogTitle,
+      textAlign: TextAlign.center,
+    );
     final dialogTextWidget = Text(
       dialogText ?? 'You can now update this app from ${versionStatus.localVersion} to ${versionStatus.storeVersion}',
       textAlign: TextAlign.center,
