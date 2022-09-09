@@ -180,7 +180,7 @@ class NewVersion {
     } else {
       final scriptElements = document.getElementsByTagName('script');
       final infoScriptElement = scriptElements.firstWhere(
-             (elm) => elm.text.contains('key: \'ds:5\''),
+            (elm) => elm.text.contains('key: \'ds:5\''),
       );
 
       final param = infoScriptElement.text.substring(20, infoScriptElement.text.length - 2)
@@ -221,8 +221,8 @@ class NewVersion {
   }) async {
     final dialogTitleWidget = Text(dialogTitle);
     final dialogTextWidget = Text(
-      dialogText ??
-          'You can now update this app from ${versionStatus.localVersion} to ${versionStatus.storeVersion}',
+      dialogText ?? 'You can now update this app from ${versionStatus.localVersion} to ${versionStatus.storeVersion}',
+      textAlign: TextAlign.center,
     );
 
     final updateButtonTextWidget = Text(updateButtonText);
